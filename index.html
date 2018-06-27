@@ -385,7 +385,7 @@
                 
               
 
-              <time title="创建时间：2018-06-27 21:04:45 / 修改时间：21:20:54" itemprop="dateCreated datePublished" datetime="2018-06-27T21:04:45+08:00">2018-06-27</time>
+              <time title="创建时间：2018-06-27 21:04:45 / 修改时间：21:29:12" itemprop="dateCreated datePublished" datetime="2018-06-27T21:04:45+08:00">2018-06-27</time>
             
 
             
@@ -443,21 +443,17 @@
       
         
           
-            <blockquote>
-<p>谨以此文记录将Hexo博客部署至GitHub时遇到的问题，方便以后查阅。</p>
-</blockquote>
-<ul>
-<li>使用<code>hexo deploy</code> 命令部署博客时提示：<code>Deployer not found: git</code></li>
-</ul>
-<p><img src="/2018/06/27/Hexo部署至GitHub遇到的问题/2018-06-27-21-07-50.png" alt="错误: Deployer not found: git"></p>
+            <p> 谨以此文记录将Hexo博客部署至GitHub时遇到的问题，方便以后查阅。</p>
+<h2 id="使用hexo-deploy-命令部署博客时提示：Deployer-not-found-git"><a href="#使用hexo-deploy-命令部署博客时提示：Deployer-not-found-git" class="headerlink" title="使用hexo deploy 命令部署博客时提示：Deployer not found: git"></a>使用<code>hexo deploy</code> 命令部署博客时提示：<code>Deployer not found: git</code></h2><p><img src="/2018/06/27/Hexo部署至GitHub遇到的问题/2018-06-27-21-07-50.png" alt="错误: Deployer not found: git"></p>
 <blockquote>
 <p>解决办法：<br>在博客根目录下执行 <code>npm install --save hexo-deployer-git</code></p>
 </blockquote>
-<ul>
-<li>无法读取本地md文件引用图片</li>
-</ul>
-<blockquote>
-<p>解决办法：<br>安装插件<code>npm install hexo-asset-image --save</code></p>
+<h2 id="无法读取本地md文件引用图片"><a href="#无法读取本地md文件引用图片" class="headerlink" title="无法读取本地md文件引用图片"></a>无法读取本地md文件引用图片</h2><blockquote>
+<p>解决办法：</p>
+<ol>
+<li>修改根目录下 <em>_config.yml</em> 中<strong>post_asset_folder</strong>: false为true；</li>
+<li>安装插件<code>npm install hexo-asset-image --save</code></li>
+</ol>
 </blockquote>
 
           
