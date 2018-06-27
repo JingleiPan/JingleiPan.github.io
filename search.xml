@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Maven阿里镜像]]></title>
-    <url>%2FJingleiPan%2F2018%2F06%2F27%2Fmaven%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%2F</url>
+    <url>%2F2018%2F06%2F27%2Fmaven%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%2F</url>
     <content type="text"><![CDATA[maven作为一个项目管理工具确实非常好用，但是在国内这个网络条件下实在是让人恼火。之前oschina的中央仓库可用，现在oschina的maven服务器关了，一直没找到国内镜像来替代。今天发现阿里云公开了一个中央仓库，大家可以试试。 配置修改maven根目录下的conf文件夹中的setting.xml文件，内容如下： 12345678&lt;mirrors&gt; &lt;mirror&gt; &lt;id&gt;alimaven&lt;/id&gt; &lt;name&gt;aliyun maven&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;/mirror&gt;&lt;/mirrors&gt; 之后就能享受如飞的maven下载速度。]]></content>
       <categories>
         <category>项目管理工具</category>
@@ -17,7 +17,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2FJingleiPan%2F2018%2F06%2F27%2Fhello-world%2F</url>
+    <url>%2F2018%2F06%2F27%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>博客</category>
